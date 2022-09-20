@@ -5,9 +5,9 @@
 //  Created by Jonah Pelfrey on 5/6/22.
 //
 
-import Foundation
+import UIKit
 
-public protocol Theme {
+public protocol AppTheme {
     static var colors: ColorPalette { get }
-    static var fonts: FontPalette { get }
 }
+

@@ -8,44 +8,47 @@
 import UIKit
 
 public protocol ColorPalette {
-    var app: AppColorPalette { get }
-    var navigation: NavigationColorPalette { get }
-    var section: SectionColorPalette { get }
-    var cell: CellColorPalette { get }
-    var search: SearchColorPalette { get }
+    var background: BackgroundColorPalette { get }
+    var border: BorderColorPalette { get }
     var chart: ChartColorPalette { get }
+    var state: StateColorPalette { get }
+    var text: TextColorPalette { get }
 }
 
-public protocol AppColorPalette {
-    var primary: UIColor { get }
-    var secondary: UIColor { get }
-    var sheetNavigationTint: UIColor { get }
+public protocol TextColorPalette {
+    var collectionContent: UIColor { get }
+    var body: UIColor { get }
+    var header: UIColor { get }
+    var inputContent: UIColor { get }
+    var inputLabel: UIColor { get }
+    var placeholder: UIColor { get }
+    var primaryButton: UIColor { get }
+    var tooltip: UIColor { get }
+    var navigationBarTitle: UIColor { get }
 }
 
-public protocol NavigationColorPalette {
-    var barTitle: UIColor { get }
-    var barTint: UIColor { get }
-    var barBackground: UIColor { get }
-    var barBackButton: UIColor { get }
+public protocol BackgroundColorPalette {
+    var content: UIColor { get }
+    var header: UIColor { get }
+    var icon: UIColor { get }
+    var navigationBar: UIColor { get }
+    var page: UIColor { get }
+    var tooltip: UIColor { get }
 }
 
-public protocol SectionColorPalette {
-    var headerBackground: UIColor { get }
-    var headerText: UIColor { get }
-}
-
-public protocol CellColorPalette {
-    var background: UIColor { get }
-    var divider: UIColor { get }
-    var title: UIColor { get }
-    var subtitle: UIColor { get }
-}
-
-public protocol SearchColorPalette {
-    var barTintColor: UIColor { get }
+public protocol BorderColorPalette {
+    var collection: UIColor { get }
+    var interactiveElement: UIColor { get }
 }
 
 public protocol ChartColorPalette {
-    var fill: UIColor { get }
-    var outline: UIColor { get }
+    var key: UIColor { get }
+    var line: UIColor { get }
+}
+
+public protocol StateColorPalette {
+    var disabled: UIColor { get }
+    var empty: UIColor { get }
+    var pressed: UIColor { get }
+    var unselected: UIColor { get }
 }
