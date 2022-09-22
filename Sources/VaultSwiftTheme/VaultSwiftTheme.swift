@@ -2,7 +2,8 @@ import UIKit
 
 public struct VaultSwiftTheme: AppTheme {
     
-    public static var colors: ColorPalette = VaultColorPalette()
+    public static var colors: AppColorPalette = VaultColorPalette()
+    public static var style: AppStyleGuide = VaultStyleGuide()
 
     public init() {}
     
@@ -10,7 +11,27 @@ public struct VaultSwiftTheme: AppTheme {
         return UIImage(named: name, in: Bundle.module, compatibleWith: nil)
     }
     
-    public func Color(for element: ColorPalette) {}
+    public func Color(for element: AppColorPalette) {}
+    
+    public static func registerFonts() {
+        WorkSans.allCases.forEach { registerFont(bundle: .module, fontName: $0.rawValue, fontExtension: "ttf") }
+        OpenSans.allCases.forEach { registerFont(bundle: .module, fontName: $0.rawValue, fontExtension: "ttf") }
+    }
+    
+    fileprivate static func registerFont(bundle: Bundle, fontName: String, fontExtension: String) {
+        guard let fontURL = bundle.url(forResource: fontName, withExtension: fontExtension),
+            let fontDataProvider = CGDataProvider(url: fontURL as CFURL),
+            let font = CGFont(fontDataProvider) else {
+                fatalError("Couldn't create font from filename: \(fontName) with extension \(fontExtension)")
+        }
+        
+        var error: Unmanaged<CFError>?
+        
+        CTFontManagerRegisterGraphicsFont(font, &error)
+    }
+}
+
+extension VaultSwiftTheme {
     
     public static func applyNavigationBarAppearance() {
         let appearance = UINavigationBarAppearance()

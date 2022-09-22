@@ -1,5 +1,5 @@
 //
-//  FontPalette.swift
+//  AppFontPalette.swift
 //  
 //
 //  Created by Jonah Pelfrey on 5/6/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-public protocol FontPalette {
+public protocol AppFontPalette {
     var searchBar: UIFont { get }
     var navigationBarTitle: UIFont { get }
     var navigationBarItem: UIFont { get }
