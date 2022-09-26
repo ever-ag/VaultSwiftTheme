@@ -8,14 +8,14 @@
 import UIKit
 
 public protocol AppFontPalette {
-    var searchBar: UIFont { get }
-    var navigationBarTitle: UIFont { get }
-    var navigationBarItem: UIFont { get }
-    var paragraph: UIFont { get }
+    var body: UIFont { get }
+    var title: UIFont { get }
+    var header: UIFont { get }
+    var input: UIFont { get }
     var caption: UIFont { get }
-    var callout: UIFont { get }
-    var numeric: UIFont { get }
-    var numericSmall: UIFont { get }
-    var numericLarge: UIFont { get }
-    var sectionHeader: UIFont { get }
+    var content: UIFont { get }
+    var button: UIFont { get }
+    var link: UIFont { get }
 }
+
+

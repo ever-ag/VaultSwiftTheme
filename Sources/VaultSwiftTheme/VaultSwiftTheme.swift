@@ -4,6 +4,7 @@ public struct VaultSwiftTheme: AppTheme {
     
     public static var colors: AppColorPalette = VaultColorPalette()
     public static var style: AppStyleGuide = VaultStyleGuide()
+    public static var fonts: AppFontPalette = VaultFontPalette()
 
     public init() {}
     
