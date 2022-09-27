@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: - Palette
-struct VaultColorPalette: ColorPalette {
+struct VaultColorPalette: AppColorPalette {
     var background: BackgroundColorPalette = VaultBackgroundColorPalette()
     var border: BorderColorPalette = VaultBorderColorPalette()
     var chart: ChartColorPalette = VaultChartColorPalette()
@@ -74,11 +74,11 @@ struct VaultTextColorPalette: TextColorPalette {
     
     var inputLabel: UIColor { return .BrandColor.Neutral.grey90 }
     
+    var navigationBarTitle: UIColor { return .BrandColor.Neutral.white }
+    
     var placeholder: UIColor { return .BrandColor.Neutral.grey50 }
     
     var primaryButton: UIColor { return .BrandColor.Neutral.white }
     
     var tooltip: UIColor { return .BrandColor.Neutral.white }
-    
-    var navigationBarTitle: UIColor { return .BrandColor.Neutral.white }
 }

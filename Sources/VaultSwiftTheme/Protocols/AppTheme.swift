@@ -8,6 +8,7 @@
 import UIKit
 
 public protocol AppTheme {
-    static var colors: ColorPalette { get }
+    static var colors: AppColorPalette { get }
+    static var style: AppStyleGuide { get }
 }
 
