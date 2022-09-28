@@ -13,56 +13,56 @@ public extension UIColor {
         
         // MARK: - Primary
         public struct Primary {
-            static var blue: UIColor {
+            public static var blue: UIColor {
                 return UIColor(hex6: 0x00326C)
             }
         }
         
         // MARK: - Secondary
         public struct Secondary {
-            static var blue: UIColor {
+            public static var blue: UIColor {
                 return .BrandColor.Blue.blue60
             }
             
-            static var teal: UIColor {
+            public static var teal: UIColor {
                 return .BrandColor.Teal.teal50
             }
             
-            static var orange: UIColor {
+            public static var orange: UIColor {
                 return .BrandColor.Orange.orange50
             }
         }
         
         // MARK: - Highlight
         public struct Highlight {
-            static var blue: UIColor {
+            public static var blue: UIColor {
                 return .BrandColor.Blue.blue10
             }
         }
         
         // MARK: - Chart
         public struct Chart {
-            static var blue: UIColor {
+            public static var blue: UIColor {
                 return .BrandColor.Blue.blue60
             }
             
-            static var teal: UIColor {
+            public static var teal: UIColor {
                 return .BrandColor.Teal.teal50
             }
             
-            static var orange: UIColor {
+            public static var orange: UIColor {
                 return .BrandColor.Orange.orange50
             }
             
-            static var yellow: UIColor {
+            public static var yellow: UIColor {
                 return .BrandColor.Yellow.yellow40
             }
             
-            static var green: UIColor {
+            public static var green: UIColor {
                 return .BrandColor.Green.green50
             }
             
-            static var purple: UIColor {
+            public static var purple: UIColor {
                 return .BrandColor.Purple.purple50
             }
         }
