@@ -7,12 +7,12 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
-    struct SemanticColor {
+    public struct SemanticColor {
         
         // MARK: - Error
-        struct Error {
+        public struct Error {
             static var error10: UIColor {
                 return UIColor(hex6: 0xFEE2E2)
             }
@@ -43,7 +43,7 @@ extension UIColor {
         }
         
         // MARK: - Warning
-        struct Warning {
+        public struct Warning {
             static var warning10: UIColor {
                 return UIColor(hex6: 0xFCF7E6)
             }
@@ -66,7 +66,7 @@ extension UIColor {
         }
         
         // MARK: - Success
-        struct Success {
+        public struct Success {
             static var success10: UIColor {
                 return UIColor(hex6: 0xDFFEED)
             }

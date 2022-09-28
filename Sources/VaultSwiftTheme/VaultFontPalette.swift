@@ -7,17 +7,24 @@
 
 import UIKit
 
+// 400 - regular
+// 600 - semibold
+
 struct VaultFontPalette: AppFontPalette {
     var body: UIFont {
         return UIFont(name: WorkSans.regular.rawValue, size: 16)!
     }
     
     var title: UIFont {
-        return UIFont(name: WorkSans.regular.rawValue, size: 27)!
+        return UIFont(name: WorkSans.regular.rawValue, size: 16)!
     }
     
-    var header: UIFont {
-        return UIFont(name: WorkSans.regular.rawValue, size: 23)!
+    var smallHeader: UIFont {
+        return UIFont(name: WorkSans.semiBold.rawValue, size: 19)!
+    }
+    
+    var largeHeader: UIFont {
+        return UIFont(name: WorkSans.semiBold.rawValue, size: 23)!
     }
     
     var input: UIFont {
@@ -33,10 +40,10 @@ struct VaultFontPalette: AppFontPalette {
     }
     
     var button: UIFont {
-        return UIFont(name: WorkSans.regular.rawValue, size: 16)!
+        return UIFont(name: WorkSans.semiBold.rawValue, size: 16)!
     }
     
     var link: UIFont {
-        return UIFont(name: WorkSans.regular.rawValue, size: 16)!
+        return UIFont(name: WorkSans.semiBold.rawValue, size: 16)!
     }
 }

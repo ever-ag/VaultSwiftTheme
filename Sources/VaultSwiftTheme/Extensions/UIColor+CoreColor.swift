@@ -7,19 +7,19 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
-    struct CoreColor {
+    public struct CoreColor {
         
         // MARK: - Primary
-        struct Primary {
+        public struct Primary {
             static var blue: UIColor {
                 return UIColor(hex6: 0x00326C)
             }
         }
         
         // MARK: - Secondary
-        struct Secondary {
+        public struct Secondary {
             static var blue: UIColor {
                 return .BrandColor.Blue.blue60
             }
@@ -34,14 +34,14 @@ extension UIColor {
         }
         
         // MARK: - Highlight
-        struct Highlight {
+        public struct Highlight {
             static var blue: UIColor {
                 return .BrandColor.Blue.blue10
             }
         }
         
         // MARK: - Chart
-        struct Chart {
+        public struct Chart {
             static var blue: UIColor {
                 return .BrandColor.Blue.blue60
             }

@@ -7,9 +7,9 @@
 
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     
-    struct BrandColor {
+    public struct BrandColor {
         
         // MARK: - Neutral
         struct Neutral {
@@ -59,7 +59,7 @@ extension UIColor {
         }
         
         // MARK: - Blue
-        struct Blue {
+        public struct Blue {
             static var blue10: UIColor {
                 return UIColor(hex6: 0xE5f2ff)
             }
@@ -98,7 +98,7 @@ extension UIColor {
         }
         
         // MARK: - Teal
-        struct Teal {
+        public struct Teal {
             static var teal10: UIColor {
                 return UIColor(hex6: 0xE0FFFE)
             }
@@ -137,7 +137,7 @@ extension UIColor {
         }
         
         // MARK: - Orange
-        struct Orange {
+        public struct Orange {
             static var orange10: UIColor {
                 return UIColor(hex6: 0xFDEADF)
             }
@@ -176,7 +176,7 @@ extension UIColor {
         }
         
         // MARK: - Green
-        struct Green {
+        public struct Green {
             static var green10: UIColor {
                 return UIColor(hex6: 0xE6FFE6)
             }
@@ -215,7 +215,7 @@ extension UIColor {
         }
         
         // MARK: - Yellow
-        struct Yellow {
+        public struct Yellow {
             static var yellow10: UIColor {
                 return UIColor(hex6: 0xFFEACC)
             }
@@ -254,7 +254,7 @@ extension UIColor {
         }
         
         // MARK: - Purple
-        struct Purple {
+        public struct Purple {
             static var purple10: UIColor {
                 return UIColor(hex6: 0xEFE6FF)
             }

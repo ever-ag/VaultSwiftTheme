@@ -10,7 +10,8 @@ import UIKit
 public protocol AppFontPalette {
     var body: UIFont { get }
     var title: UIFont { get }
-    var header: UIFont { get }
+    var smallHeader: UIFont { get }
+    var largeHeader: UIFont { get }
     var input: UIFont { get }
     var caption: UIFont { get }
     var content: UIFont { get }
