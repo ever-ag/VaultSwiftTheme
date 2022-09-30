@@ -39,12 +39,12 @@ extension VaultSwiftTheme {
         appearance.backgroundColor = colors.background.navigationBar
         appearance.titleTextAttributes = [
             .foregroundColor: colors.text.navigationBarTitle,
-            .font: fonts.title
+            .font: fonts.navigationBarTitle
         ]
         
         appearance.largeTitleTextAttributes = [
             .foregroundColor: colors.text.navigationBarTitle,
-            .font: fonts.title
+            .font: fonts.navigationBarTitle
         ]
         
         let backAppearance = UIBarButtonItemAppearance(style: .plain)
