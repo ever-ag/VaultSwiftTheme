@@ -18,6 +18,7 @@ public protocol AppFontPalette {
     var link: UIFont { get }
     var navigationBarItem: UIFont { get }
     var navigationBarTitle: UIFont { get }
+    var numeric: UIFont { get }
     var numericSmall: UIFont { get }
     var numericLarge: UIFont { get }
     var searchBar: UIFont { get }

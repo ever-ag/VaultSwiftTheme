@@ -52,8 +52,12 @@ struct VaultFontPalette: AppFontPalette {
         return UIFont(name: WorkSans.semiBold.rawValue, size: 22)!
     }
     
+    var numeric: UIFont {
+        return UIFont(name: WorkSans.semiBold.rawValue, size: 16)!
+    }
+    
     var numericSmall: UIFont {
-        return UIFont(name: WorkSans.semiBold.rawValue, size: 14)!
+        return UIFont(name: WorkSans.regular.rawValue, size: 14)!
     }
     
     var numericLarge: UIFont {
