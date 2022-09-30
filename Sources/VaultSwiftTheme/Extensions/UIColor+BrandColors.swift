@@ -12,7 +12,7 @@ public extension UIColor {
     struct BrandColor {
         
         // MARK: - Neutral
-        struct Neutral {
+        public struct Neutral {
             static var white: UIColor {
                 return UIColor(hex6: 0xFFFFFF)
             }
