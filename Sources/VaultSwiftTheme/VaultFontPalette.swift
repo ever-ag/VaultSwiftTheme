@@ -60,6 +60,10 @@ struct VaultFontPalette: AppFontPalette {
         return UIFont(name: WorkSans.semiBold.rawValue, size: 24)!
     }
     
+    var searchBar: UIFont {
+        return UIFont(name: WorkSans.regular.rawValue, size: 14)!
+    }
+    
     var title: UIFont {
         return UIFont(name: WorkSans.regular.rawValue, size: 16)!
     }

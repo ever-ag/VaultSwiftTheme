@@ -20,6 +20,7 @@ public protocol AppFontPalette {
     var navigationBarTitle: UIFont { get }
     var numericSmall: UIFont { get }
     var numericLarge: UIFont { get }
+    var searchBar: UIFont { get }
     var title: UIFont { get }
 }
 
