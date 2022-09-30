@@ -9,7 +9,7 @@ import UIKit
 
 public extension UIColor {
     
-    public struct SemanticColor {
+    struct SemanticColor {
         
         // MARK: - Error
         public struct Error {

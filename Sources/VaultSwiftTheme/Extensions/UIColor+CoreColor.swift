@@ -9,7 +9,7 @@ import UIKit
 
 public extension UIColor {
     
-    public struct CoreColor {
+    struct CoreColor {
         
         // MARK: - Primary
         public struct Primary {

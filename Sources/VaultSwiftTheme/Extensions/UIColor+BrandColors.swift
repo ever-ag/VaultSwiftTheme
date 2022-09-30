@@ -9,7 +9,7 @@ import UIKit
 
 public extension UIColor {
     
-    public struct BrandColor {
+    struct BrandColor {
         
         // MARK: - Neutral
         struct Neutral {
