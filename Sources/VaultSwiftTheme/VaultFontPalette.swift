@@ -40,6 +40,10 @@ struct VaultFontPalette: AppFontPalette {
         return UIFont(name: WorkSans.regular.rawValue, size: 16)!
     }
     
+    var label: UIFont {
+        return UIFont(name: WorkSans.semiBold.rawValue, size: 16)!
+    }
+    
     var link: UIFont {
         return UIFont(name: WorkSans.semiBold.rawValue, size: 16)!
     }

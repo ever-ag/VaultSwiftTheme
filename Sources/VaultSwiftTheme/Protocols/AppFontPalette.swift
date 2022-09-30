@@ -15,6 +15,7 @@ public protocol AppFontPalette {
     var headerSmall: UIFont { get }
     var headerLarge: UIFont { get }
     var input: UIFont { get }
+    var label: UIFont { get }
     var link: UIFont { get }
     var navigationBarItem: UIFont { get }
     var navigationBarTitle: UIFont { get }
