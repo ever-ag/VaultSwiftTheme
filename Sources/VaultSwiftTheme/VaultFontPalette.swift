@@ -21,7 +21,7 @@ struct VaultFontPalette: AppFontPalette {
     }
     
     var caption: UIFont {
-        return UIFont(name: WorkSans.regular.rawValue, size: 16)!
+        return UIFont(name: WorkSans.regular.rawValue, size: 14)!
     }
     
     var content: UIFont {

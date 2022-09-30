@@ -44,6 +44,7 @@ public protocol StateColorPalette {
 public protocol TextColorPalette {
     var collectionContent: UIColor { get }
     var body: UIColor { get }
+    var caption: UIColor { get }
     var header: UIColor { get }
     var inputContent: UIColor { get }
     var inputLabel: UIColor { get }

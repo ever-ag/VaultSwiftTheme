@@ -68,6 +68,8 @@ struct VaultTextColorPalette: TextColorPalette {
     
     var body: UIColor { return .BrandColor.Neutral.grey70 }
     
+    var caption: UIColor { return .BrandColor.Neutral.grey40 }
+    
     var header: UIColor { return .BrandColor.Neutral.grey90 }
     
     var inputContent: UIColor { return .BrandColor.Neutral.grey90 }

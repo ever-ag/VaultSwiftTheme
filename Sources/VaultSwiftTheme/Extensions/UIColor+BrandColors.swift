@@ -33,6 +33,10 @@ public extension UIColor {
                 return UIColor(hex6: 0xC5C6C7)
             }
             
+            public static var grey40: UIColor {
+                return UIColor(hex6: 0xA7A8A9)
+            }
+            
             public static var grey50: UIColor {
                 return UIColor(hex6: 0x8C8D8E)
             }
