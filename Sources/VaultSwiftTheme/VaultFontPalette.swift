@@ -53,7 +53,7 @@ struct VaultFontPalette: AppFontPalette {
     }
     
     var navigationBarTitle: UIFont {
-        return UIFont(name: WorkSans.semiBold.rawValue, size: 22)!
+        return UIFont(name: WorkSans.semiBold.rawValue, size: 19)!
     }
     
     var numeric: UIFont {
