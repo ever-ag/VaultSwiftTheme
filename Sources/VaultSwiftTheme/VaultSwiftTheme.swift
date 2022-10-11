@@ -54,7 +54,7 @@ extension VaultSwiftTheme {
         
         appearance.backButtonAppearance = backAppearance
         
-        UINavigationBar.appearance().tintColor = colors.text.navigationBarTitle
+        UINavigationBar.appearance().tintColor = colors.background.navigationBar
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().compactAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
