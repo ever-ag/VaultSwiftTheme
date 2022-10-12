@@ -25,7 +25,7 @@ struct VaultBackgroundColorPalette: BackgroundColorPalette {
     
     var icon: UIColor { return .BrandColor.Neutral.grey60 }
     
-    var navigationBar: UIColor { return .BrandColor.Blue.blue70 }
+    var navigationBar: UIColor { return UIColor(hex6: 0x274856) }
     
     var page: UIColor { return .BrandColor.Neutral.grey10 }
     
