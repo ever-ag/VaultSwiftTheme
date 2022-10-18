@@ -7,8 +7,8 @@
 
 import Foundation
 
-final class Glyph {
-    static let arrowUp: String = "↗"
-    static let arrowDown: String = "↙"
-    static let bullet: String = "∙"
+public final class Glyph {
+    public static let arrowUp: String = "↗"
+    public static let arrowDown: String = "↙"
+    public static let bullet: String = "∙"
 }
