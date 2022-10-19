@@ -60,5 +60,25 @@ extension VaultSwiftTheme {
         UINavigationBar.appearance().compactAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
+    
+    public static func applyTabBarAppearance() {
+        let itemAppearance = UITabBarItemAppearance()
+        
+        itemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        itemAppearance.normal.iconColor = .lightGray
+        
+        itemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        itemAppearance.selected.iconColor = .white
+        
+        let barAppearance = UITabBarAppearance()
+        barAppearance.backgroundColor = UIColor(hex6: 0x274856)
+        barAppearance.stackedLayoutAppearance = itemAppearance
+        
+        UITabBar.appearance().standardAppearance = barAppearance
+        
+        if #available(iOS 15.0, *) {
+            UITabBar.appearance().scrollEdgeAppearance = barAppearance
+        }
+    }
 }
 
