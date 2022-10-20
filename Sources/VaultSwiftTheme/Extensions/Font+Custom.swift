@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public enum WorkSans: String, CaseIterable {
     case black = "WorkSans-Black"
@@ -26,6 +27,10 @@ public enum WorkSans: String, CaseIterable {
     case semiBoldItalic = "WorkSans-SemiBoldItalic"
     case thin = "WorkSans-Thin"
     case thinItalic = "WorkSans-ThinItalic"
+    
+    static func font(_ style: WorkSans, size: CGFloat) -> UIFont {
+        return UIFont(name: style.rawValue, size: size)!
+    }
 }
 
 public enum OpenSans: String, CaseIterable {
@@ -41,4 +46,8 @@ public enum OpenSans: String, CaseIterable {
     case regular = "OpenSans-Regular"
     case semiBold = "OpenSans-SemiBold"
     case semiBoldItalic = "OpenSans-SemiBoldItalic"
+    
+    static func font(_ style: OpenSans, size: CGFloat) -> UIFont {
+        return UIFont(name: style.rawValue, size: size)!
+    }
 }

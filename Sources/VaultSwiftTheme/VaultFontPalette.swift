@@ -7,9 +7,6 @@
 
 import UIKit
 
-// 400 - regular
-// 600 - semibold
-
 struct VaultFontPalette: AppFontPalette {
     
     var body: UIFont {
