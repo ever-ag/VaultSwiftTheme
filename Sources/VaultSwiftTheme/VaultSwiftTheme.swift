@@ -64,11 +64,17 @@ extension VaultSwiftTheme {
     public static func applyTabBarAppearance() {
         let itemAppearance = UITabBarItemAppearance()
         
-        itemAppearance.normal.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        itemAppearance.normal.iconColor = .lightGray
+        itemAppearance.normal.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.Brand.Neutral.grey30
+        ]
         
-        itemAppearance.selected.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        itemAppearance.selected.iconColor = .white
+        itemAppearance.normal.iconColor = UIColor.Brand.Neutral.grey30
+        
+        itemAppearance.selected.titleTextAttributes = [
+            NSAttributedString.Key.foregroundColor: UIColor.Brand.Neutral.white
+        ]
+        
+        itemAppearance.selected.iconColor = UIColor.Brand.Neutral.white
         
         let barAppearance = UITabBarAppearance()
         barAppearance.backgroundColor = UIColor(hex6: 0x274856)
