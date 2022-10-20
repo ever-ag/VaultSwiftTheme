@@ -28,8 +28,8 @@ public enum WorkSans: String, CaseIterable {
     case thin = "WorkSans-Thin"
     case thinItalic = "WorkSans-ThinItalic"
     
-    static func font(_ style: WorkSans, size: CGFloat) -> UIFont {
-        return UIFont(name: style.rawValue, size: size)!
+    static func style(_ type: WorkSans, size: CGFloat) -> UIFont {
+        return UIFont(name: type.rawValue, size: size)!
     }
 }
 
@@ -47,7 +47,7 @@ public enum OpenSans: String, CaseIterable {
     case semiBold = "OpenSans-SemiBold"
     case semiBoldItalic = "OpenSans-SemiBoldItalic"
     
-    static func font(_ style: OpenSans, size: CGFloat) -> UIFont {
-        return UIFont(name: style.rawValue, size: size)!
+    static func style(_ type: OpenSans, size: CGFloat) -> UIFont {
+        return UIFont(name: type.rawValue, size: size)!
     }
 }

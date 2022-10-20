@@ -12,8 +12,6 @@ public struct VaultSwiftTheme: AppTheme {
         return UIImage(named: name, in: Bundle.module, compatibleWith: nil)
     }
     
-    public func Color(for element: AppColorPalette) {}
-    
     public static func registerFonts() {
         WorkSans.allCases.forEach { registerFont(bundle: .module, fontName: $0.rawValue, fontExtension: "ttf") }
         OpenSans.allCases.forEach { registerFont(bundle: .module, fontName: $0.rawValue, fontExtension: "ttf") }
@@ -33,34 +31,36 @@ public struct VaultSwiftTheme: AppTheme {
 }
 
 extension VaultSwiftTheme {
-    
+
+    // MARK: - Navigation Bar Appearance
     public static func applyNavigationBarAppearance() {
         let appearance = UINavigationBarAppearance()
-        appearance.backgroundColor = colors.background.navigationBar
+        appearance.backgroundColor = UIColor.Brand.Blue.blue70
         appearance.titleTextAttributes = [
-            .foregroundColor: colors.text.navigationBarTitle,
-            .font: fonts.navigationBarTitle
+            .foregroundColor: UIColor.Brand.Neutral.white,
+            .font: WorkSans.style(.semiBold, size: 19)
         ]
         
         appearance.largeTitleTextAttributes = [
-            .foregroundColor: colors.text.navigationBarTitle,
-            .font: fonts.navigationBarTitle
+            .foregroundColor: UIColor.Brand.Neutral.white,
+            .font: WorkSans.style(.semiBold, size: 19)
         ]
         
         let backAppearance = UIBarButtonItemAppearance(style: .plain)
         backAppearance.normal.titleTextAttributes = [
-            .foregroundColor: colors.text.navigationBarTitle
+            .foregroundColor: UIColor.Brand.Neutral.white
         ]
         
         appearance.backButtonAppearance = backAppearance
         
-        UINavigationBar.appearance().tintColor = colors.text.navigationBarTitle
+        UINavigationBar.appearance().tintColor = UIColor.Brand.Neutral.white
         UINavigationBar.appearance().isTranslucent = false
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().compactAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
     
+    // MARK: - Tab Bar Appearance
     public static func applyTabBarAppearance() {
         let itemAppearance = UITabBarItemAppearance()
         
@@ -77,7 +77,7 @@ extension VaultSwiftTheme {
         itemAppearance.selected.iconColor = UIColor.Brand.Neutral.white
         
         let barAppearance = UITabBarAppearance()
-        barAppearance.backgroundColor = UIColor(hex6: 0x274856)
+        barAppearance.backgroundColor = UIColor.Brand.Blue.blue70
         barAppearance.stackedLayoutAppearance = itemAppearance
         
         UITabBar.appearance().standardAppearance = barAppearance
