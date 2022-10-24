@@ -62,7 +62,7 @@ struct VaultFontPalette: AppFontPalette {
     }
     
     var numericLarge: UIFont {
-        return UIFont(name: WorkSans.semiBold.rawValue, size: 24)!
+        return UIFont(name: WorkSans.semiBold.rawValue, size: 21)!
     }
     
     var searchBar: UIFont {
