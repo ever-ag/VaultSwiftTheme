@@ -119,6 +119,33 @@ public extension UIColor {
             }
         }
         
+        // MARK: - Chart
+        public struct Chart {
+            public static var chart1: UIColor {
+                return InteractiveBlue.blue70
+            }
+            
+            public static var chart2: UIColor {
+                return Orange.orange40
+            }
+            
+            public static var chart3: UIColor {
+                return Lime.lime40
+            }
+            
+            public static var chart4: UIColor {
+                return Lemon.lemon40
+            }
+            
+            public static var chart5: UIColor {
+                return Teal.teal60
+            }
+            
+            public static var chart6: UIColor {
+                return Purple.purple50
+            }
+        }
+        
         // MARK: - Neutral
         public struct Neutral {
             public static var white: UIColor {
